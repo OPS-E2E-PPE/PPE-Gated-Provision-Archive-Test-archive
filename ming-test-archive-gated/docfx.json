@@ -1,17 +1,56 @@
 {
   "build": {
     "content": [
+      {
+        "files": [
+          "**/*.md",
+          "**/*.yml"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "_themes/**",
+          "**/docfx.json",
+          "_repo.en-us/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE",
+          "ThirdPartyNotices.md",
+          "SECURITY.md"
+        ],
+        "src": "."
+      }
     ],
     "resource": [
+      {
+        "files": [
+          "**/*.png",
+          "**/*.jpg"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "_themes/**",
+          "**/docfx.json",
+          "_repo.en-us/**"
+        ],
+        "src": "."
+      }
     ],
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
-      "feedback_system": "Standard"
+      "feedback_system": "Standard",
+      "breadcrumb_path": "breadcrumb\\gated-provision-archive\\ming-test-archive-gated\\toc.yml",
+      "permissioned-type": "public",
+      "is_archived": true,
+      "is_retired": false,
+      "ROBOTS": "NOINDEX,NOFOLLOW",
+      "docs_archive": "tool",
+      "uhfHeaderId": "MSDocsHeader-Archive"
     },
     "fileMetadata": {},
     "template": [],
-    "dest": "archive-template",
-    "markdownEngineName": "markdig"
+    "dest": "archive-template"
   }
 }
